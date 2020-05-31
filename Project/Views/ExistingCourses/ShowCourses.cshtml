@@ -1,0 +1,27 @@
+﻿
+
+@using Project.ViewModel;
+@model CoursesModel;
+@{
+    Layout = "AllCourses";
+    ViewData["Title"] = "ShowCourses";
+}
+
+<h1>ShowCourses</h1>
+<form method="post">
+    <select name="id">
+        @foreach (var tmp in Model.courses)
+        {
+            <option value="@tmp.Idcourse">@tmp.Name</option>
+        }
+    </select>
+    <select name="typeoption">
+        <option value="1">Создание урока</option>
+        <option value="2">Редактирование/Просмотр курса</option>
+        <option value="3">Удаление курса</option>
+    </select>        
+    <input type="submit" value="Продолжить"/>
+    
+ </form>
+
+

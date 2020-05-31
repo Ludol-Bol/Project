@@ -1,0 +1,22 @@
+﻿@using Project;
+
+
+@{
+    Layout = "UserTeacherHomePage";
+    ViewData["Title"] = "Page1";
+
+}
+
+<h1>Page1</h1>
+<div class="menu">
+    <a href="~/NewCourse/NewCours">Новый курс</a>
+    <a href="~/ExistingCourses/ShowCourses">Все курсы</a>
+    <a href="~/UserTeacherSettings/UpdateTeacher">Настройки</a>
+</div>
+<div class="contentpage">
+    <p>
+        @Program.datateacher.Name<br />
+        @Program.datateacher.Surname<br />
+        @Program.datateacher.Patronymic<br/>
+    <p>
+</div>

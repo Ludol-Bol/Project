@@ -1,0 +1,32 @@
+﻿@using Project;
+@{
+    ViewData["Title"] = "UpdateTeacher";
+}
+
+<h1>UpdateTeacher</h1>
+<form method="post">
+    <h1>Регистрация</h1>
+    <div id="square">
+        <p>Фамилия</p>
+        <input type="text" name="newsurname" value="@Program.datateacher.Surname" />
+        <p>Имя</p>
+        <input type="text" name="newname" value="@Program.datateacher.Name"/>
+        <p>Отчество</p>
+        <input type="text" name="newpatr" value="@Program.datateacher.Patronymic"/>
+        <p>Телефон</p>
+        <input type="text" name="newphone" value="@Program.datateacher.Phone" />
+        <p>Школа</p>
+        <select name="newschool">
+            @foreach (var tmp in Model.schools)
+            {
+                <option value="@tmp.Idschool">@tmp.NameSchool</option>
+            }
+        </select>
+        <p>Пароль</p>
+        <input id="password_1" type="password" name="newpassword" value="@Program.datateacher.Password"/>
+        <input id="randompassword" type="button"  />
+        <input id="showpassword" type="checkbox" value="Показать пароль" />Показать пароль
+        <input id="confirmation" type="submit" value="Обновить данные" />
+    </div>
+</form>
+

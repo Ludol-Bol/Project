@@ -1,0 +1,78 @@
+﻿.contaner 
+{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    position: relative;
+    width: 1000px;
+}
+
+body 
+{
+    font-family: 'Amatic SC', 'Bodoni MT';
+    background-image: linear-gradient(to right, #997489, #b87f84, #cb8f79, #cca771, #bbc379, #abd289, #96e0a0, #7bedbd, #73f1ca, #6bf4d7, #64f8e4, #5ffbf1);
+}
+
+#square 
+{
+    width: 500px;
+    height: 1000px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #997489, #a87797, #b679a7, #c27cb8, #cc80cb, #d37fd2, #d97eda, #e07de1, #e776db, #ee6fd4, #f567cd, #fb5fc5);
+    margin-bottom: 50px;
+}
+
+input {
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: 1px;
+    border-radius: 25px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+select {
+    border: 1px;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 20px;
+    outline: none;
+}
+
+p 
+{
+    font-size: 20px;
+}
+
+#confirmation 
+{
+    background: white;
+    color: black;
+    width: 60px;
+    margin-left: 45%;
+    font-family: 'Amatic SC', 'Bodoni MT';
+    outline: none;
+}
+
+#randompassword {
+    width: 50px;
+    height: 48px;
+    margin-left: 45%;
+    background-image: url("/img/random.png");
+}
+
+#showpassword
+{
+    content: "Show";
+}
+
+#confirmation
+{
+    margin-left:35%;
+    width: 150px;
+}

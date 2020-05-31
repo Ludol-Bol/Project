@@ -1,0 +1,36 @@
+﻿.contaner 
+{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    position: relative;
+    width: 1000px;
+}
+
+body 
+{
+    font-family: 'Amatic SC', 'Bodoni MT';
+    background-image: linear-gradient(to right, #997489, #b87f84, #cb8f79, #cca771, #bbc379, #abd289, #96e0a0, #7bedbd, #73f1ca, #6bf4d7, #64f8e4, #5ffbf1);
+}
+
+h1
+{
+    font-size:90px;
+}
+
+select 
+{
+    border: 1px;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 30px;
+    outline: none;
+}
+
+input {
+    border: 1px;
+    border-radius: 25px;
+    font-size: 30px;
+    outline: none;
+}
+

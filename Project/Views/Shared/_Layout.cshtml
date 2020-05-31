@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/StartDesign.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="~/js/jquery.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body class="contaner">
+    <div id="square">
+        @RenderBody()
+    </div>
+    <div>
+        <a id="registration" href="~/Login/RegPage">Регистрация</a>
+    </div>
+    <script src="~/js/ScriptsLogin.js"></script>
+</body>
+</html>

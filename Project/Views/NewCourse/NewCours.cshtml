@@ -1,0 +1,27 @@
+﻿@using Project.ViewModel;
+@model SchoolModels;
+@{
+    ViewData["Title"] = "NewCours";
+}
+
+
+    <form method="post">
+        <h1>Создание курса</h1>
+        <p>Название круса</p>
+        <input type="text" name="namec" />
+        <p>Предмет</p>
+        <select name="sudject">
+            @foreach (var tmp in Model.subjects)
+            {
+                <option value="@tmp.Idsubject">@tmp.NamrSubject</option>
+            }
+        </select>
+        <select name="_class">
+            @for (int i = 1; i < 12; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+        <input type="submit" size="20" value="Создать" />
+    </form>
+

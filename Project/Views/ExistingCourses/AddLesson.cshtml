@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AddLesson";
+}
+
+<h1>AddLesson</h1>
+<form method="post" enctype="multipart/form-data">
+    <p>Название урока</p>
+    <input type="text" name="name" />
+    <p>Информация для учащихся</p>
+<textarea name="infostring"></textarea>
+    <p>Cылки на видео</p>
+    <input type="url" name="links" />
+    <p>Файл</p>
+    <input type="file" name="pathfile" />
+    <input type="submit" value="Отправить" />
+</form>
+
+
+

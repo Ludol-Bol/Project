@@ -1,0 +1,41 @@
+﻿@using Project.ViewModel;
+@model SchoolModels;
+@{
+    Layout = "TeacherReg";
+    ViewData["Title"] = "TeacherRegPage";
+}
+    <form method="post">
+        <h1>Регистрация</h1>
+        <div id="square">
+            <p>Фамилия</p>
+            <input type="text" name="surname" />
+            <p>Имя</p>
+            <input type="text" name="name" />
+            <p>Отчество</p>
+            <input type="text" name="patr" />
+            <p>Телефон</p>
+            <input type="text" name="phone" />
+            <p>Школа</p>
+            <select name="school">
+                @foreach (var tmp in Model.schools)
+                {
+                    <option value="@tmp.Idschool">@tmp.NameSchool</option>
+                }
+            </select>
+            <p>Предмет</p>
+            <select name="sudject">
+                @foreach (var tmp in Model.subjects)
+                {
+                    <option value="@tmp.Idsubject">@tmp.NamrSubject</option>
+                }
+            </select>
+            <p>E-mail</p>
+            <input type="text" name="email" />
+            <p>Пароль</p>
+            <input id ="password_1" type="password" name="password" />
+            <input id="randompassword" type="button" />
+            <input id="showpassword" type="checkbox" value="Показать пароль" />Показать пароль
+            <input id="confirmation" type="submit" value="Подтвердить данные" />
+        </div>
+    </form>
+

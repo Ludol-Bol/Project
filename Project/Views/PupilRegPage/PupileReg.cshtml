@@ -1,0 +1,45 @@
+﻿@using Project.ViewModel;
+@model SchoolModels;
+@{
+    ViewData["Title"] = "PupileReg";
+}
+
+
+<form method="post">
+    <h1>Регистрация</h1>
+    <p>Фамилия</p>
+    <br />
+    <input type="text" name="surname" />
+    <p>Имя</p>
+    <br />
+    <input type="text" name="name" />
+    <p>Отчество</p>
+    <br />
+    <input type="text" name="patr" />
+    <p>Телефон</p>
+    <br />
+    <input type="text" name="phone" />
+    <p>Школа</p>
+    <select name="school">
+         @foreach (var tmp in Model.schools)
+         {
+            <option value="@tmp.Idschool">@tmp.NameSchool</option>
+         }
+    </select>
+    <br />
+    <p>Класс</p>
+    <select name="number">
+        @for (int i = 1; i < 12; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+    <p>E-mail</p>
+    <br />
+    <input type="text" name="email" />
+    <p>Пароль</p>
+    <br />
+    <input type="password" name="password" />
+    <input type="submit" value="Подтвердить данные" />
+
+</form>
